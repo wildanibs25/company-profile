@@ -16,24 +16,6 @@ class HeadmasterController extends Controller
     }
 
 
-    public function create()
-    {
-        //
-    }
-
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show(Headmaster $headmaster)
-    {
-        //
-    }
-
-
     public function edit(Headmaster $headmaster)
     {
         return view('backend.headmaster.edit', compact('headmaster'));
@@ -65,11 +47,5 @@ class HeadmasterController extends Controller
         } else {
             return back()->withInput()->withErrors('Data gagal Diubah');
         }
-    }
-
-
-    public function destroy(Headmaster $headmaster)
-    {
-        //
     }
 }

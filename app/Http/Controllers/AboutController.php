@@ -16,24 +16,6 @@ class AboutController extends Controller
     }
 
 
-    public function create()
-    {
-        //
-    }
-
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show(About $about)
-    {
-        //
-    }
-
-
     public function edit(About $about)
     {
         return view('backend.about.edit', compact('about'));
@@ -67,11 +49,5 @@ class AboutController extends Controller
         } else {
             return back()->withInput()->withErrors('Data gagal Diubah');
         }
-    }
-
-
-    public function destroy(About $about)
-    {
-        //
     }
 }

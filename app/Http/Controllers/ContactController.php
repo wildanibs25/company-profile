@@ -15,12 +15,6 @@ class ContactController extends Controller
     }
 
 
-    public function create()
-    {
-        //
-    }
-
-
     public function store(Request $request)
     {
         $request->validate([
@@ -53,18 +47,6 @@ class ContactController extends Controller
         $contact->save();
 
         return view('backend.contact.show', compact('contact'));
-    }
-
-
-    public function edit(Contact $contact)
-    {
-        //
-    }
-
-
-    public function update(Request $request, Contact $contact)
-    {
-        //
     }
 
 

@@ -8,7 +8,6 @@ use App\Models\Headmaster;
 use App\Models\Major;
 use App\Models\Teacher;
 use App\Models\VisiMission;
-use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
