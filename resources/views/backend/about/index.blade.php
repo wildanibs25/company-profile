@@ -5,7 +5,7 @@
         <div class="card-body">
             <div class="card-header d-flex">
                 <h5 class="card-title fw-semibold mt-2">Tentang Sekolah</h5>
-                <a href="/about/edit/{{ $about->id }}" class="btn btn-primary ms-auto">Edit</a>
+                <a href="/about-profile/edit/{{ $about->id }}" class="btn btn-primary ms-auto">Edit</a>
             </div>
             <div class="card-body">
                 <table class="table">

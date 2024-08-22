@@ -31,7 +31,7 @@
                     <span class="hide-menu">Isi</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="/about" aria-expanded="false">
+                    <a class="sidebar-link" href="/about-profile" aria-expanded="false">
                         <span>
                             <i class="ti ti-article"></i>
                         </span>
@@ -91,7 +91,7 @@
                     <span class="hide-menu">Notifikasi</span>
                 </li>
                  <li class="sidebar-item">
-                    <a class="sidebar-link" href="#" aria-expanded="false">
+                    <a class="sidebar-link" href="/get-register" aria-expanded="false">
                         <span>
                             <i class="ti ti-bookmark"></i>
                         </span>
@@ -99,7 +99,7 @@
                     </a>
                 </li>
                  <li class="sidebar-item">
-                    <a class="sidebar-link" href="#" aria-expanded="false">
+                    <a class="sidebar-link" href="/get-contact" aria-expanded="false">
                         <span>
                             <i class="ti ti-briefcase"></i>
                         </span>

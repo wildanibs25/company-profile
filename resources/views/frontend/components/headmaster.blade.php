@@ -7,9 +7,7 @@
             <div class="col-lg-6 about-right-faq align-self mb-lg-0 mb-5 pl-xl-5">
                 <h6>Kepala Sekolah</h6>
                 <h3 class="title-big mb-3">{{ $headmaster->headmaster_name }}</h3>
-                <p class="">{{ Str::limit($headmaster->headmaster_description, 300, '...') }}</p>
-                <a class="btn button-style button-2 mt-lg-5 mt-4" href="about.html">Read More<i
-                        class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                <p class="">{{ $headmaster->headmaster_description }}</p>
             </div>
         </div>
     </div>

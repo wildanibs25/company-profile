@@ -13,7 +13,7 @@ Author URL: http://w3layouts.com
     <!--//header-->
     <!-- inner banner -->
     @php
-        $currentPage = "Contact Us";
+        $currentPage = 'Contact Us';
     @endphp
     @include('frontend.components.breadcrumb')
     <!-- //inner banner -->
@@ -21,11 +21,9 @@ Author URL: http://w3layouts.com
     <section class="contact py-5" id="contact">
         <div class="container py-md-4 py-3">
             <div class="title-main text-center mx-auto mb-md-4">
-                <h3 class="title-big">Get In Touch</h3>
+                <h3 class="title-big">Hubungi Kami</h3>
                 <p class="sub-title mt-2">Cum doctus civibus efficiantur in imperdiet deterruisset. Cras efficitur,
-                    metus
-                    gravida suscipit cursus, dui diam pre lorem id
-                    lectus.</p>
+                    metus gravida suscipit cursus, dui diam pre lorem id lectus.</p>
             </div>
             <div class="main-grid-contact">
                 <div class="row mt-5 mx-0">
@@ -57,7 +55,7 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" type="text" name="phone" id="phone"
-                                        placeholder="Phone Number" required="">
+                                        placeholder="No Telepon" required="">
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" name="message" id="message" placeholder="Message" required=""></textarea>
@@ -76,37 +74,7 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //contact -->
     <!-- support -->
-    <div class="support py-5" id="support">
-        <div class="container pb-md-5 pb-3">
-            <h3 class="title-w3ls text-center mb-5">Help & Support</h3>
-            <div class="row support-bottom text-center mb-5">
-                <div class="col-lg-4 col-sm-6 support-grid">
-                    <span class="fa fa-laptop"></span>
-                    <h5 class="text-uppercase mt-3 mb-2">Online Support</h5>
-                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-                    <a href="#call" class="btn button-style button-2 mt-4">
-                        Call Now
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 support-grid mt-sm-0 mt-4">
-                    <span class="fa fa-comments"></span>
-                    <h5 class="text-uppercase mt-3 mb-2">Live Chat 24/7</h5>
-                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-                    <a href="#chat" class="btn button-style button-2 mt-4">
-                        Let's Chat
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 support-grid mt-lg-0 mt-4">
-                    <span class="fa fa-question"></span>
-                    <h5 class="text-uppercase mt-3 mb-2">Any Questions</h5>
-                    <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
-                    <a href="#ask" class="btn button-style button-2 mt-4">
-                        Ask Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('frontend.components.support')
     <!-- support -->
     <!-- footer -->
     @include('frontend.components.footer')

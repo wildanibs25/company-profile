@@ -8,26 +8,20 @@ use Illuminate\Support\Facades\Storage;
 
 class MajorController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $majors = Major::all();
         return view('backend.major.index', compact('majors'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         return view('backend.major.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
         $request->validate([
@@ -52,25 +46,19 @@ class MajorController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(Major $major)
     {
         return view('backend.major.show', compact('major'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(Major $major)
     {
         return view('backend.major.edit', compact('major'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, Major $major)
     {
         $request->validate([
@@ -99,9 +87,7 @@ class MajorController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(Major $major)
     {
         if ($major->major_image && Storage::exists($major->major_image)) {

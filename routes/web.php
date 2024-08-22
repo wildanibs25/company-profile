@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HeadmasterController;
 use App\Http\Controllers\MajorController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VisiMissionController;
@@ -21,9 +22,9 @@ Route::middleware('guest')->group(function(){
 Route::middleware('auth')->group(function(){
     Route::get('/dashboard', [DashboardController::class, 'index']);
 
-    Route::get('/about', [AboutController::class, 'index']);
-    Route::get('/about/edit/{about}', [AboutController::class, 'edit']);
-    Route::post('/about/update/{about}', [AboutController::class, 'update']);
+    Route::get('/about-profile', [AboutController::class, 'index']);
+    Route::get('/about-profile/edit/{about}', [AboutController::class, 'edit']);
+    Route::post('/about-profile/update/{about}', [AboutController::class, 'update']);
 
     Route::get('/major', [MajorController::class, 'index']);
     Route::get('/major/create', [MajorController::class, 'create']);
@@ -69,11 +70,24 @@ Route::middleware('auth')->group(function(){
     Route::post('/user/update/{user}', [UserController::class, 'update']);
     Route::get('/user/destroy/{user}', [UserController::class, 'destroy']);
 
+    Route::get('/get-contact', [ContactController::class, 'index']);
+    Route::get('/get-contact/show/{contact}', [ContactController::class, 'show']);
+    Route::get('/get-contact/destroy/{contact}', [ContactController::class, 'destroy']);
+
+    Route::get('/get-register', [RegisterController::class, 'index']);
+    Route::get('/get-register/show/{register}', [RegisterController::class, 'show']);
+    Route::post('/get-register/update-status/{register}', [RegisterController::class, 'updateStatus']);
+    Route::get('/get-register/edit/{register}', [RegisterController::class, 'edit']);
+    Route::get('/get-register/destroy/{register}', [RegisterController::class, 'destroy']);
+    Route::post('/get-register/update/{register}', [RegisterController::class, 'update']);
+
     Route::get('/logout', [AuthController::class, 'logout']);
 });
 
 
 Route::get('/', [FrontendController::class, 'index']);
-Route::get('/about', [FrontendController::class, 'about']);
+Route::get('/announcement/{announcement}', [FrontendController::class, 'detail']);
 Route::get('/contact', [FrontendController::class, 'contact']);
+Route::get('/register', [FrontendController::class, 'register']);
 Route::post('/send-contact', [ContactController::class, 'store']);
+Route::post('/send-register', [RegisterController::class, 'store']);

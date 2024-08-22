@@ -8,50 +8,38 @@ use Illuminate\Support\Facades\Storage;
 
 class AboutController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $about = About::first();
         return view('backend.about.index', compact('about'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(About $about)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(About $about)
     {
         return view('backend.about.edit', compact('about'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, About $about)
     {
         $request->validate([
@@ -65,8 +53,8 @@ class AboutController extends Controller
         $data = $request->all();
         unset($data['school_logo']);
 
-        if($file = $request->file('school_logo')){
-            if($about->school_logo && Storage::exists($about->school_logo)){
+        if ($file = $request->file('school_logo')) {
+            if ($about->school_logo && Storage::exists($about->school_logo)) {
                 Storage::delete($about->school_logo);
             }
             $data['school_logo'] = Storage::putFile('public/about', $file);
@@ -74,16 +62,14 @@ class AboutController extends Controller
 
         $about->update($data);
 
-        if($about){
+        if ($about) {
             return redirect('/about')->withSuccess('Data berhasil Diubah');
-        }else{
+        } else {
             return back()->withInput()->withErrors('Data gagal Diubah');
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(About $about)
     {
         //

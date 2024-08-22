@@ -8,50 +8,38 @@ use Illuminate\Support\Facades\Storage;
 
 class HeadmasterController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $headmaster = Headmaster::first();
         return view('backend.headmaster.index', compact('headmaster'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(Headmaster $headmaster)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(Headmaster $headmaster)
     {
         return view('backend.headmaster.edit', compact('headmaster'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, Headmaster $headmaster)
     {
         $request->validate([
@@ -79,9 +67,7 @@ class HeadmasterController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(Headmaster $headmaster)
     {
         //

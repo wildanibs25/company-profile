@@ -1,4 +1,4 @@
-<div class="w3l-index-block4 pb-5">
+<div class="w3l-index-block4 pb-5" id="about">
     <div class="features-bg pb-lg-5 pt-lg-4 py-4">
         <div class="container">
             <div class="title-main text-center mx-auto mb-md-4">

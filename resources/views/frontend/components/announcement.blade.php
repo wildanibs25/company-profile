@@ -8,12 +8,12 @@
                 @forelse ($announcement as $item)
                     <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-0 mt-4">
                         <div class=" grids5-info">
-                            <a href="#blog">
+                            <a href="/announcement/{{ $item->id }}">
                                 <img src="{{ Storage::url($item->announcement_image) }}" alt="" />
                             </a>
                             <div class="blog-info">
                                 <h5>{{ $item->created_at->format("d F Y") }}</h5>
-                                <h4><a href="#blog">{{ $item->announcement_title }}</a></h4>
+                                <h4><a href="/announcement/{{ $item->id }}">{{ $item->announcement_title }}</a></h4>
                                 <p>{{ Str::limit($item->announcement_description, 150) }}</p>
                             </div>
                         </div>

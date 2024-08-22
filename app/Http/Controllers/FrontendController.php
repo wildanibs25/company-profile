@@ -35,18 +35,17 @@ class FrontendController extends Controller
         );
     }
 
-    public function about()
+    public function detail(Announcement $announcement)
     {
         $about          = About::first();
-        $headmaster     = Headmaster::first();
         $teachers       = Teacher::all();
         $visi           = VisiMission::where('category', 'visi')->first();
         $misi           = VisiMission::where('category', 'misi')->get();
         return view(
-            'frontend.base.about',
+            'frontend.base.announcement-detail',
             compact(
+                'announcement',
                 'about',
-                'headmaster',
                 'teachers',
                 'visi',
                 'misi',
@@ -57,7 +56,6 @@ class FrontendController extends Controller
     public function contact()
     {
         $about          = About::first();
-        $headmaster     = Headmaster::first();
         $teachers       = Teacher::all();
         $visi           = VisiMission::where('category', 'visi')->first();
         $misi           = VisiMission::where('category', 'misi')->get();
@@ -65,10 +63,28 @@ class FrontendController extends Controller
             'frontend.base.contact',
             compact(
                 'about',
-                'headmaster',
                 'teachers',
                 'visi',
                 'misi',
+            )
+        );
+    }
+
+    public function register()
+    {
+        $about          = About::first();
+        $teachers       = Teacher::all();
+        $visi           = VisiMission::where('category', 'visi')->first();
+        $misi           = VisiMission::where('category', 'misi')->get();
+        $majors         = Major::all();
+        return view(
+            'frontend.base.register',
+            compact(
+                'about',
+                'teachers',
+                'visi',
+                'misi',
+                'majors',
             )
         );
     }

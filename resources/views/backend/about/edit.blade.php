@@ -7,7 +7,7 @@
                 <h5 class="card-title fw-semibold mt-2">Edit Tentang Sekolah</h5>
             </div>
             <div class="card-body">
-                <form action="/about/update/{{ $about->id }}" method="post" enctype="multipart/form-data">
+                <form action="/about-profile/update/{{ $about->id }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label for="school_logo" class="form-label">Logo Sekolah</label>
