@@ -8,7 +8,7 @@
             <div class="row">
                 @forelse ($majors as $item)
                     <div class="col-lg-4 col-md-6 features15-col-text">
-                        <a href="courses.html" class="d-flex feature-unit align-items-center" style="height: 250px;">
+                        <a href="javascript:void(0)" class="d-flex feature-unit align-items-center" style="height: 250px;">
                             <div class="col-4">
                                 <div class="features15-info">
                                     <img class="img-fluid" src="{{ Storage::url($item->major_image) }}" alt=" ">

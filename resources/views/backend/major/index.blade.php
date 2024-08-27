@@ -16,7 +16,7 @@
                             <th>Foto Jurusan</th>
                             <th>Kepala Jurusan</th>
                             <th>Deskripsi Jurusan</th>
-                            <th>Pengaturan</th>
+                            <th style="width: 100px;">Pengaturan</th>
                         </tr>
                     </thead>
                     <tbody>

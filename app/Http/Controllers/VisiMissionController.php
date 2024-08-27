@@ -29,7 +29,7 @@ class VisiMissionController extends Controller
         ]);
 
         if ($request->category == 'visi' && VisiMission::where('category', 'visi')->first()) {
-            return back()->withInput()->withErrors('Visi sudah ada, Tidak boloh Ditambah');
+            return back()->withInput()->withErrors('Visi sudah ada, Tidak boleh Ditambah');
         }
 
         $data = $request->all();
@@ -64,7 +64,7 @@ class VisiMissionController extends Controller
         ]);
 
         if ($request->category == 'visi' && $visiMission->category != 'visi'  && VisiMission::where('category', 'visi')->first()) {
-            return back()->withInput()->withErrors('Visi sudah ada, Tidak boloh Ditambah');
+            return back()->withInput()->withErrors('Visi sudah ada, Tidak boleh Ditambah');
         }
 
         $data = $request->all();

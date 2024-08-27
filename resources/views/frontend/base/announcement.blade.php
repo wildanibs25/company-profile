@@ -9,16 +9,19 @@
     <!--//header-->
     <!-- inner banner -->
     @php
-        $currentPage = 'Register Now';
+        $currentPage = 'Announcement';
     @endphp
     @include('frontend.components.breadcrumb')
     <!-- //inner banner -->
-    <!-- register -->
-    @include('frontend.components.register-form')
-    <!-- //register -->
-    <!-- support -->
-    @include('frontend.components.support')
-    <!-- support -->
+    <!-- about section -->
+    @include('frontend.components.announcement-detail')
+    <!-- //about section -->
+    <!-- testimonials -->
+    @include('frontend.components.visi-mission')
+    <!--//testimonials-->
+    <!-- teams 32 block -->
+    @include('frontend.components.teacher')
+    <!-- //teams 32 block -->
     <!-- footer -->
     @include('frontend.components.footer')
     <!-- //footer -->

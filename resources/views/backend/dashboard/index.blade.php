@@ -1,22 +1,99 @@
 @extends('backend.base.index')
 @section('title', 'Dashboard')
 @section('content')
-    <!--  Row 1 -->
+    <div class="row">
+        <div class="col-lg d-flex align-items-stretch">
+            <div class="card w-100">
+                <div class="card-body p-4">
+                    <div class="mb-4">
+                        <h5 class="card-title fw-semibold">Guru</h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
+                            <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" />
+                            <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" />
+                        </svg>
+                        <h2 class="ms-3">{{ $teacher }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg d-flex align-items-stretch">
+            <div class="card w-100">
+                <div class="card-body p-4">
+                    <div class="mb-4">
+                        <h5 class="card-title fw-semibold">Jurusan</h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-assembly" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+                            <path
+                                d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z" />
+                        </svg>
+                        <h2 class="ms-3">{{ $major }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg d-flex align-items-stretch">
+            <div class="card w-100">
+                <div class="card-body p-4">
+                    <div class="mb-4">
+                        <h5 class="card-title fw-semibold">Pesan</h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                            <path d="M15 19l2 2l4 -4" />
+                        </svg>
+                        <h2 class="ms-3">{{ $student }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg d-flex align-items-stretch">
+            <div class="card w-100">
+                <div class="card-body p-4">
+                    <div class="mb-4">
+                        <h5 class="card-title fw-semibold">Pendaftar</h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                            <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                            <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                        </svg>
+                        <h2 class="ms-3">{{ $register }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-8 d-flex align-items-strech">
             <div class="card w-100">
                 <div class="card-body">
                     <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
                         <div class="mb-3 mb-sm-0">
-                            <h5 class="card-title fw-semibold">Sales Overview</h5>
-                        </div>
-                        <div>
-                            <select class="form-select">
-                                <option value="1">March 2023</option>
-                                <option value="2">April 2023</option>
-                                <option value="3">May 2023</option>
-                                <option value="4">June 2023</option>
-                            </select>
+                            <h5 class="card-title fw-semibold">Pendaftaran</h5>
                         </div>
                     </div>
                     <div id="chart"></div>
@@ -29,376 +106,34 @@
                     <!-- Yearly Breakup -->
                     <div class="card overflow-hidden">
                         <div class="card-body p-4">
-                            <h5 class="card-title mb-9 fw-semibold">Yearly Breakup</h5>
+                            <h5 class="card-title mb-9 fw-semibold">Perbandingan Siswa</h5>
                             <div class="row align-items-center">
-                                <div class="col-8">
-                                    <h4 class="fw-semibold mb-3">$36,358</h4>
-                                    <div class="d-flex align-items-center mb-3">
-                                        <span
-                                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                                            <i class="ti ti-arrow-up-left text-success"></i>
-                                        </span>
-                                        <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                                        <p class="fs-3 mb-0">last year</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="me-4">
-                                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                                            <span class="fs-2">2023</span>
-                                        </div>
-                                        <div>
-                                            <span
-                                                class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                                            <span class="fs-2">2023</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
+                                <div class="col-12">
                                     <div class="d-flex justify-content-center">
-                                        <div id="breakup"></div>
+                                        <div id="student"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <!-- Monthly Earnings -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row alig n-items-start">
-                                <div class="col-8">
-                                    <h5 class="card-title mb-9 fw-semibold"> Monthly Earnings </h5>
-                                    <h4 class="fw-semibold mb-3">$6,820</h4>
-                                    <div class="d-flex align-items-center pb-1">
-                                        <span
-                                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                                            <i class="ti ti-arrow-down-right text-danger"></i>
+                                    <div class="d-flex justify-content-evenly mt-3">
+                                         <span class="badge bg-success">
+                                            Perempuan
                                         </span>
-                                        <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                                        <p class="fs-3 mb-0">last year</p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="d-flex justify-content-end">
-                                        <div
-                                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                                            <i class="ti ti-currency-dollar fs-6"></i>
-                                        </div>
+                                        <span class="badge bg-primary">
+                                            Laki-laki
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="earning"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="card w-100">
-                <div class="card-body p-4">
-                    <div class="mb-4">
-                        <h5 class="card-title fw-semibold">Recent Transactions</h5>
-                    </div>
-                    <ul class="timeline-widget mb-0 position-relative mb-n5">
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">09:30</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
-                                <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1">Payment received from John Doe
-                                of $385.90</div>
-                        </li>
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">10:00 am</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
-                                <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New sale recorded <a
-                                    href="javascript:void(0)" class="text-primary d-block fw-normal">#ML-3467</a>
-                            </div>
-                        </li>
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">12:00 am</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
-                                <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1">Payment was made of $64.95 to
-                                Michael</div>
-                        </li>
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">09:30 am</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
-                                <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New sale recorded <a
-                                    href="javascript:void(0)" class="text-primary d-block fw-normal">#ML-3467</a>
-                            </div>
-                        </li>
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">09:30 am</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
-                                <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New arrival
-                                recorded
-                            </div>
-                        </li>
-                        <li class="timeline-item d-flex position-relative overflow-hidden">
-                            <div class="timeline-time text-dark flex-shrink-0 text-end">12:00 am</div>
-                            <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                                <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
-                            </div>
-                            <div class="timeline-desc fs-3 text-dark mt-n1">Payment Done</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="card w-100">
-                <div class="card-body p-4">
-                    <h5 class="card-title fw-semibold mb-4">Recent Transactions</h5>
-                    <div class="table-responsive">
-                        <table class="table text-nowrap mb-0 align-middle">
-                            <thead class="text-dark fs-4">
-                                <tr>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Id</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Assigned</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Name</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Priority</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Budget</h6>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">1</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                                        <span class="fw-normal">Web Designer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Elite Admin</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">2</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Real Homes WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-secondary rounded-3 fw-semibold">Medium</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">3</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-danger rounded-3 fw-semibold">High</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">4</h6>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                                        <span class="fw-normal">Frontend Engineer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-                <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="{{ asset('backend') }}/assets/images/products/s4.jpg"
-                            class="card-img-top rounded-0" alt="..."></a>
-                    <a href="javascript:void(0)"
-                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
-                            class="ti ti-basket fs-4"></i></a>
-                </div>
-                <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Boat Headphone</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h6 class="fw-semibold fs-4 mb-0">$50 <span
-                                class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
-                        <ul class="list-unstyled d-flex align-items-center mb-0">
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-                <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="{{ asset('backend') }}/assets/images/products/s5.jpg"
-                            class="card-img-top rounded-0" alt="..."></a>
-                    <a href="javascript:void(0)"
-                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
-                            class="ti ti-basket fs-4"></i></a>
-                </div>
-                <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">MacBook Air Pro</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h6 class="fw-semibold fs-4 mb-0">$650 <span
-                                class="ms-2 fw-normal text-muted fs-3"><del>$900</del></span></h6>
-                        <ul class="list-unstyled d-flex align-items-center mb-0">
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-                <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="{{ asset('backend') }}/assets/images/products/s7.jpg"
-                            class="card-img-top rounded-0" alt="..."></a>
-                    <a href="javascript:void(0)"
-                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
-                            class="ti ti-basket fs-4"></i></a>
-                </div>
-                <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h6 class="fw-semibold fs-4 mb-0">$150 <span
-                                class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
-                        <ul class="list-unstyled d-flex align-items-center mb-0">
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-xl-3">
-            <div class="card overflow-hidden rounded-2">
-                <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="{{ asset('backend') }}/assets/images/products/s11.jpg"
-                            class="card-img-top rounded-0" alt="..."></a>
-                    <a href="javascript:void(0)"
-                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
-                            class="ti ti-basket fs-4"></i></a>
-                </div>
-                <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Cute Soft Teddybear</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h6 class="fw-semibold fs-4 mb-0">$285 <span
-                                class="ms-2 fw-normal text-muted fs-3"><del>$345</del></span></h6>
-                        <ul class="list-unstyled d-flex align-items-center mb-0">
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                            <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script>
+        var registerDate = @json($registerDate);
+        const months = registerDate.map(register => register.month);
+        const counts = registerDate.map(register => register.count);
+
+        var registerGender = @json($registerGender);
+        const genders = Object.values(registerGender);
+    </script>
 @endsection

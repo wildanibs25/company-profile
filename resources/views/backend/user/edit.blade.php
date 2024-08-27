@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-body">
             <div class="card-header d-flex">
-                <h5 class="card-title fw-semibold mt-2">Tambah Pengguna</h5>
+                <h5 class="card-title fw-semibold mt-2">Edit Pengguna</h5>
             </div>
             <div class="card-body">
                 <form action="/user/update/{{ $user->id }}" method="post" enctype="multipart/form-data">

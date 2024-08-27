@@ -15,7 +15,7 @@
                             <th>Nama Guru</th>
                             <th>Foto Guru</th>
                             <th>Mata Pelajaran</th>
-                            <th class="w-25">Pengaturan</th>
+                            <th style="width: 100px;">Pengaturan</th>
                         </tr>
                     </thead>
                     <tbody>

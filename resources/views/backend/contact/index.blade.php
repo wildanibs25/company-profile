@@ -15,7 +15,7 @@
                             <th>Email</th>
                             <th>Status</th>
                             <th>Tanggal</th>
-                            <th class="w-25">Pengaturan</th>
+                            <th style="width: 100px;">Pengaturan</th>
                         </tr>
                     </thead>
                     <tbody>

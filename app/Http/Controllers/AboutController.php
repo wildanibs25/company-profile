@@ -45,7 +45,7 @@ class AboutController extends Controller
         $about->update($data);
 
         if ($about) {
-            return redirect('/about')->withSuccess('Data berhasil Diubah');
+            return redirect('/about-profile')->withSuccess('Data berhasil Diubah');
         } else {
             return back()->withInput()->withErrors('Data gagal Diubah');
         }

@@ -6,10 +6,11 @@ use App\Models\About;
 use App\Models\Announcement;
 use App\Models\Headmaster;
 use App\Models\Major;
+use App\Models\Register;
 use App\Models\Teacher;
 use App\Models\VisiMission;
 
-class FrontendController extends Controller
+class IndexController extends Controller
 {
     public function index()
     {
@@ -34,14 +35,14 @@ class FrontendController extends Controller
         );
     }
 
-    public function detail(Announcement $announcement)
+    public function announcement(Announcement $announcement)
     {
         $about          = About::first();
         $teachers       = Teacher::all();
         $visi           = VisiMission::where('category', 'visi')->first();
         $misi           = VisiMission::where('category', 'misi')->get();
         return view(
-            'frontend.base.announcement-detail',
+            'frontend.base.announcement',
             compact(
                 'announcement',
                 'about',

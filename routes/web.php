@@ -5,8 +5,8 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HeadmasterController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MajorController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TeacherController;
@@ -85,9 +85,9 @@ Route::middleware('auth')->group(function(){
 });
 
 
-Route::get('/', [FrontendController::class, 'index']);
-Route::get('/announcement/{announcement}', [FrontendController::class, 'detail']);
-Route::get('/contact', [FrontendController::class, 'contact']);
-Route::get('/register', [FrontendController::class, 'register']);
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/announcement/{announcement}', [IndexController::class, 'announcement']);
+Route::get('/contact', [IndexController::class, 'contact']);
+Route::get('/register', [IndexController::class, 'register']);
 Route::post('/send-contact', [ContactController::class, 'store']);
 Route::post('/send-register', [RegisterController::class, 'store']);

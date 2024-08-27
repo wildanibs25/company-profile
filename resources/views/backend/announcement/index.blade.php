@@ -16,7 +16,7 @@
                             <th>Gambar Pengumuman</th>
                             <th>Tanggal Pengumuman</th>
                             <th>Deskripsi Pengumuman</th>
-                            <th>Pengaturan</th>
+                            <th style="width: 100px;">Pengaturan</th>
                         </tr>
                     </thead>
                     <tbody>

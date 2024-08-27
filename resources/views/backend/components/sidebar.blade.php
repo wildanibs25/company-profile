@@ -95,7 +95,7 @@
                         <span>
                             <i class="ti ti-bookmark"></i>
                         </span>
-                        <span class="hide-menu">Register</span>
+                        <span class="hide-menu">Registrasi</span>
                     </a>
                 </li>
                  <li class="sidebar-item">

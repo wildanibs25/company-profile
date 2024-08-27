@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-body">
             <div class="card-header d-flex">
-                <h5 class="card-title fw-semibold mt-2">Tambah Pengumuman</h5>
+                <h5 class="card-title fw-semibold mt-2">Edit Pengumuman</h5>
             </div>
             <div class="card-body">
                 <form action="/announcement/update/{{ $announcement->id }}" method="post" enctype="multipart/form-data">

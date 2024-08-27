@@ -77,8 +77,8 @@
      <div class="copyright-footer text-center">
          <div class="container">
              <div class="columns">
-                 <p>@2020 Online Study. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
-                         W3Layouts</a>
+                 <p>@ {{ now()->format('Y') }} CopyRight. All rights reserved. Design by <a
+                         href="javascript:void()" target="_blank">Wildan Ibnu Sina</a>
                  </p>
              </div>
          </div>
